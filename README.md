@@ -4,7 +4,25 @@ Vemos três diferenças críticas entre programação e engenharia de software: 
 O que é Engenharia de Software
 Acredito que seja uma administração das funcionalidades, tecnologias, para poder dimensionar  tempo, escalabilidade ou seja a estrutura de um projeto
 
-Exemplos de trade- offs
-Tabelas de busca vs. re-calculação. A situação mais comum é um algoritmo envolvendo um Look-up-table, que é uma técnica utilizada no tratamento de imagens. ...
-Dados compactados vs. Dados descompactados. ...
-Re-renderização vs. imagens armazenadas.
+Exemplo de trade-offs
+
+Desempenho vs. Segurança:
+
+Trade-off: Melhorar a segurança de um sistema pode exigir a implementação de mecanismos como criptografia, autenticação em várias etapas, e verificações adicionais. Embora esses mecanismos aumentem a segurança, eles também podem adicionar latência e consumir mais recursos, o que pode impactar o desempenho do sistema.
+
+Exemplo: Em um aplicativo bancário, o uso de criptografia forte para proteger dados do usuário pode reduzir a velocidade de transações ou aumentar o tempo de resposta das consultas.
+Escalabilidade vs. Consistência:
+
+Trade-off: Em sistemas distribuídos, aumentar a escalabilidade pode comprometer a consistência dos dados, especialmente em arquiteturas que seguem o modelo CAP (Consistência, Disponibilidade, Tolerância a Partições). Isso ocorre porque, para garantir alta disponibilidade e tolerância a falhas, é possível que o sistema permita leituras de dados desatualizados.
+
+Exemplo: Em uma plataforma de e-commerce distribuída globalmente, garantir que todas as instâncias do banco de dados estejam sempre sincronizadas pode ser difícil e afetar a capacidade do sistema de escalar rapidamente.
+Manutenibilidade vs. Tempo de Entrega:
+
+Trade-off: Escrever código altamente modular, documentado e seguindo as melhores práticas de design de software facilita a manutenção e a evolução do sistema. No entanto, isso pode aumentar o tempo necessário para a entrega inicial do produto, especialmente em projetos com prazos apertados.
+
+Exemplo: Em uma startup que precisa lançar um produto mínimo viável (MVP) rapidamente, os desenvolvedores podem optar por um design mais simples e menos modular para cumprir o prazo, o que pode tornar a manutenção mais difícil no futuro.
+
+
+
+
+
