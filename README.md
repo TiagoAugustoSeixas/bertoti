@@ -20,6 +20,37 @@ Manutenibilidade vs. Tempo de Entrega:
 
 Trade-off: Escrever código altamente modular, documentado e seguindo as melhores práticas de design de software facilita a manutenção e a evolução do sistema. No entanto, isso pode aumentar o tempo necessário para a entrega inicial do produto, especialmente em projetos com prazos apertados.
 
+
++----------------+
+|     Produto    |
++----------------+
+| - nome: String |
+| - quant: String|
++----------------+
+| + Produto(nome: String, quant: String) |
+| + getNome(): String                    |
+| + setNome(nome: String): void          |
+| + getquant(): String                   |
+| + setQuant(quant: String): void        |
++----------------+
+
++-------------------------+
+|         Estoque         |
++-------------------------+
+| - produtos: List<Produto> |
++-------------------------+
+| + cadastrarproduto(produto: Produto): void         |
+| + buscarProdutopornome(nome: String): List<Produto>|
+| + getProdutos(): List<Produto>                     |
++-------------------------+
+
++----------------+
+|      Main      |
++----------------+
+| <<static>> main(args: String[]): void |
++----------------+
+
+
 Exemplo: Em uma startup que precisa lançar um produto mínimo viável (MVP) rapidamente, os desenvolvedores podem optar por um design mais simples e menos modular para cumprir o prazo, o que pode tornar a manutenção mais difícil no futuro.
 
 
